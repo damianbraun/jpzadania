@@ -15,12 +15,26 @@ $ tail --lines=2 program.c
 ```
 
 3\. W pliku program.c znajdź wszystkie wiersze z wystąpieniem słowa „main”. (grep)
+```sh
+$ grep main program.c 
+main()
+```
 
 4\. Plikowi program.c nadaj następujące uprawnienia: właściciel – czytanie, pisanie, grupa – czytanie, pozostali użytkownicy: brak uprawnień. (chmod)
+```sh
+chmod 640 program.c 
+```
 
 5\. Będąc w katalogu temp przenieś katalog wazne-sprawy do katalogu praca.
+```sh
+mv dom/wazne-sprawy/ praca/
+```
 
 6\. Zarchiwizuj cały katalog temp. (zip i tar)
+```sh
+tar -cf archiwum.tar temp/
+zip -r archiwum.zip jpzadania/
+```
 
 7\. Usuń katalog temp.
 
