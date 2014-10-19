@@ -33,11 +33,15 @@ mv dom/wazne-sprawy/ praca/
 6\. Zarchiwizuj cały katalog temp. (zip i tar)
 ```sh
 tar -cf archiwum.tar temp/
-zip -r archiwum.zip jpzadania/
+zip -r archiwum.zip temp/
 ```
 
 7\. Usuń katalog temp.
+```sh
+rm -r temp
+```
 
 8\. Odtwórz z archiwum katalog temp. (unzip i tar)
+
 
 9\. Posprzątaj na swoim koncie.
